@@ -19,10 +19,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/admin", adminRoutes);
 app.use("/api/services", serviceRoutes);
 
-app.get("/api/health", (req, res) => {
+app.get("/", (req, res) => {
   res.json({
     status: "ok",
-    message: "API rodando com sucesso.",
+    message: "API da barbearia rodando com sucesso.",
+    docs: {
+      health: "/api/health",
+      services: "/api/services",
+    },
   });
 });
 
