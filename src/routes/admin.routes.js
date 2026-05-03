@@ -1,8 +1,8 @@
 import bcrypt from "bcryptjs";
 import express from "express";
 import jwt from "jsonwebtoken";
-import { authAdmin } from "../../middlewares/authAdmin.js";
-import { prisma } from "../../prisma.js";
+import { prisma } from "../prisma.js";
+import authAdmin from "../middlewares/authAdmin.js";
 
 const router = express.Router();
 

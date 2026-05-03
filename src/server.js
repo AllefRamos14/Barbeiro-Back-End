@@ -1,8 +1,8 @@
 import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
-import adminRoutes from "../src/routes/admin.routes.js";
-import serviceRoutes from "../src/routes/service.routes.js";
+import adminRoutes from "./routes/admin.routes.js";
+import serviceRoutes from "./routes/service.routes.js";
 
 dotenv.config();
 
@@ -12,7 +12,7 @@ app.use(cors({
   origin: "http://localhost:5173",
 }));
 
-// app.use(express.json());
+
 app.use(express.json({ type: "*/*" }));
 app.use(express.urlencoded({ extended: true }));
 

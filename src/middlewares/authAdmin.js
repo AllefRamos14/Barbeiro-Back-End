@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 
-export function authAdmin(req, res, next) {
+ function authAdmin(req, res, next) {
     const authHeader = req.headers.authorization;
 
     if (!authHeader) {
@@ -35,3 +35,4 @@ export function authAdmin(req, res, next) {
         });
     }
 }
+export default authAdmin

@@ -1,5 +1,5 @@
 import express from "express";
-import { authAdmin } from "../middlewares/authAdmin.js";
+import authAdmin from "../middlewares/authAdmin.js";
 import { prisma } from "../prisma.js";
 
 const router = express.Router();
