@@ -8,8 +8,14 @@ dotenv.config();
 
 const app = express();
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://barbeiro-front-end.vercel.app",
+];
+
 app.use(cors({
   origin: "http://localhost:5173",
+  credentials: true,
 }));
 
 
@@ -27,6 +33,13 @@ app.get("/", (req, res) => {
       health: "/api/health",
       services: "/api/services",
     },
+  });
+});
+
+app.get("/api/health", (req, res) => {
+  res.json({
+    status: "ok",
+    message: "API rodando com sucesso.",
   });
 });
 
