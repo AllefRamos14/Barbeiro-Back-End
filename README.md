@@ -204,22 +204,10 @@ NODE_ENV=production
 
 ---
 
-## 🤝 Contribuindo
-
-1. Faça um **fork** do projeto
-2. Crie uma branch: `git checkout -b feature/minha-feature`
-3. Commit: `git commit -m 'feat: minha nova feature'`
-4. Push: `git push origin feature/minha-feature`
-5. Abra um **Pull Request**
-
-> Este projeto segue o padrão [Conventional Commits](https://www.conventionalcommits.org/pt-br/).
-
----
-
 
 <div align="center">
 
-Feito com ❤️ e ☕ por **[Seu Nome](https://github.com/AllefRamos14)**
+Feito com ❤️ e ☕ por **[Alef Ramos](https://github.com/AllefRamos14)**
 
 ⭐ Se esse projeto te ajudou, deixa uma estrela!
 
